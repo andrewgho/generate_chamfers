@@ -10,7 +10,7 @@ module chamfers(distance) {
     translate([0, 0, -e]) linear_extrude(e) polygon(points);
   }
   module end_polygon(points) {
-    translate([0, 0, distance + e]) linear_extrude(e) polygon(points);
+    translate([0, 0, distance - e]) linear_extrude(e) polygon(points);
   }
 
   // Draw starting cube and ending total polygon
