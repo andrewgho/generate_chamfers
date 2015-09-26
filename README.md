@@ -31,7 +31,7 @@ the rectangle side, make a polygon from the points from the
 mini-triangle as well as points on the edges of the rectangle.
 
 This repository includes
-[an exploded diagram showing the internal structure](blob/master/exploded.stl)
+[an exploded diagram showing the internal structure](exploded.stl)
 that you can inspect to see the internal structure.
 
 Meta
