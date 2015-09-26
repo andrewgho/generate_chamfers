@@ -53,9 +53,9 @@ def main(argv = [])
         translate([0, 0, distance - e]) linear_extrude(e) polygon(points);
       }
 
-      // Draw starting cube and ending total polygon
+      // Draw starting cube and extruded polygon
       translate([0, 0, -e]) cube([#{width}, #{height}, e]);
-      end_polygon(#{polygon.to_openscad});
+      linear_extrude(distance) polygon(#{polygon.to_openscad});
   end
 
   polygon.lines.each_with_index do |line, i|
